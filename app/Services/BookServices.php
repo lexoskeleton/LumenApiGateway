@@ -4,12 +4,12 @@ namespace App\Services;
 
 use App\Traits\ConsumesExternalService;
 
-class BookService {
+class AuthorService {
 
     use ConsumesExternalService;
 
     /**
-     * The base uri to consume the authors service
+     * The base uri to consume the bookss service
      * @var string
      */
 
@@ -17,6 +17,6 @@ class BookService {
 
      public function __construct()
      {
-         $this->baseUri = config('services.books.base_uri');
+         $this->baseUri = config('services.authors.base_uri');
      }
 }
