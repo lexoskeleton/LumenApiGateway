@@ -9,7 +9,7 @@ class BookService {
     use ConsumesExternalService;
 
     /**
-     * The base uri to consume the authors service
+     * The base uri to consume the bookss service
      * @var string
      */
 
