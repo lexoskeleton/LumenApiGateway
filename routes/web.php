@@ -10,6 +10,9 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
+/**
+ * Routes for authors
+ */
 
 $router->get('/authors', 'AuthorController@index');
 $router->post('/authors', 'AuthorController@store');
@@ -18,6 +21,9 @@ $router->put('/authors/{author}', 'AuthorController@update');
 $router->patch('/authors/{author}', 'AuthorController@update');
 $router->delete('/authors/{author}', 'AuthorController@destroy');
 
+/**
+ * Routes for books
+ */
 $router->get('/books', 'BookController@index');
 $router->post('/books', 'BookController@store');
 $router->get('/books/{book}', 'BookController@show');
